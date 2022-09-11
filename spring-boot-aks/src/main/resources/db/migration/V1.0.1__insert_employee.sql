@@ -1,0 +1,11 @@
+SET IDENTITY_INSERT employee ON;
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (1, N'白戸', N'次郎', N'白戸次郎', N'お父さん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (2, N'白戸', N'正子', N'白戸正子', N'お母さん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (3, N'吉田', N'彩', N'吉田彩', N'上戸 彩');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (4, N'桃', N'太郎', N'桃太郎', N'桃ちゃん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (5, N'浦島', N'太郎', N'浦島太郎', N'浦ちゃん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (6, N'金', N'太郎', N'金太郎', N'金ちゃん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (7, N'かぐや', N'姫', N'かぐや姫', N'かぐちゃん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (8, N'乙', N'姫', N'乙姫', N'乙ちゃん');
+INSERT INTO employee (id, last_name, first_name, full_name, description) VALUES (9, N'織', N'姫', N'織姫', N'織ちゃん');
+SET IDENTITY_INSERT employee OFF;

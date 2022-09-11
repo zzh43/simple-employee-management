@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: aks-sample-frontend-load-balancer
+  name: aks-sample-frontend-load-balancer
+spec:
+  ports:
+    - port: 80
+      name: http
+      targetPort: 80
+  selector:
+    app: aks-sample-frontend
+  sessionAffinity: None
+  type: LoadBalancer

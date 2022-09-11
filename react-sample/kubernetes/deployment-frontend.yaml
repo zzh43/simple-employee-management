@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aks-sample-frontend
+spec:
+  selector:
+    matchLabels:
+      app: aks-sample-frontend
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: aks-sample-frontend
+        version: v1
+    spec:
+      imagePullSecrets:
+      - name: docker-reg-credential
+      containers:
+      - name: aks-sample-frontend
+        image: team20registory.azurecr.io/aks-sample/test-frontend:0.0.1
+        resources:
+          requests:
+            cpu: 500m
+            memory: 500Mi
+          limits:
+            cpu: 1
+            memory: 1G
